@@ -57,4 +57,5 @@ Cuckoo Sandbox adalah sistem analisis malware otomatis open source yang canggih,
 
 4) Melakukan analisis memori tingkat lanjut dari sistem tervirtualisasi yang terinfeksi melalui Volatilitas serta pada granularity memori proses menggunakan YARA. Karena sifat open source Cuckoo dan desain modular yang luas, orang dapat menyesuaikan aspek lingkungan analisis, pemrosesan hasil analisis, dan tahap pelaporan. Cuckoo memberi pengguna semua persyaratan untuk dengan mudah mengintegrasikan sandbox ke dalam kerangka kerja yang ada dan membuat backend seperti yang pengguna inginkan, dengan format yang pengguna inginkan, dan semua itu tanpa persyaratan lisensi.
 
+Coba
 
