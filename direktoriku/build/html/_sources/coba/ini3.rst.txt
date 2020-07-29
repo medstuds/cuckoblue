@@ -1,0 +1,42 @@
+(4) Instalasi dan Pengaturan Cuckoo-Virtualvenv.sh
+===================================================
+
+1. Install virtualenv:
+
+.. code-block:: shell
+
+   $ sudo apt-get update && sudo apt-get -y install virtualenv
+
+.. image:: l.png
+
+
+2. Install virtualenvwrapper:
+
+.. code-block:: shell
+
+   $ sudo apt-get -y install virtualenvwrapper                                 
+
+.. image:: m.png
+
+
+3. Install pip for python3:
+
+.. code-block:: shell
+
+   $ sudo apt-get -y install python3-pip
+
+.. image:: n.png
+
+
+4. pip3 install --user virtualenvwrapper:
+
+.. code-block:: shell
+
+   $ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
+   $ echo "source ~/.local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+   $ export WORKON_HOME=~/.virtualenvs
+   $ echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
+   $ echo "export PIP_VIRTUALENV_BASE=~/.virtualenvs" >> ~/.bashrc 
+   $ source ~/.bashrc
+
+.. image:: o.png

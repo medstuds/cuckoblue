@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cuckoo Sandbox Analisis Malware &mdash; cuckooblue 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pengenalan" href="coba/Pengenalan/pengenalan.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> cuckooblue
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Daftar isi:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coba/Pengenalan/pengenalan.html">Pengenalan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Instalasi/instalasi.html">Instalasi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Penggunaan/penggunaan.html">Penggunaan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Pengembangan/pengembangan.html">Pengembangan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Catatan/catatan.html">Catatan</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">cuckooblue</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Cuckoo Sandbox Analisis Malware</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cuckoo-sandbox-analisis-malware">
+<h1>Cuckoo Sandbox Analisis Malware<a class="headerlink" href="#cuckoo-sandbox-analisis-malware" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="kelompok-2-rksblue">
+<h2>Kelompok 2 - RKSBlue<a class="headerlink" href="#kelompok-2-rksblue" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/cuc.png" src="_images/cuc.png" />
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Disusun oleh:
+
+Dedek Wahyu Avyansyah
+Fajar Sofar
+Gifni Hammam Muyasar Permadi
+Muhammad Jamil Daulima
+Tiara Anggita Yudhistira
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Daftar isi:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coba/Pengenalan/pengenalan.html">Pengenalan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coba/Pengenalan/pengenalan.html#cuckoo-sandbox">Cuckoo Sandbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Pengenalan/pengenalan.html#sejarah-terciptanya-cuckoo-sandbox">Sejarah Terciptanya Cuckoo Sandbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Pengenalan/pengenalan.html#arsitektur-cuckoo-sandbox">Arsitektur Cuckoo Sandbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Pengenalan/pengenalan.html#cara-kerja-cuckoo-sandbox">Cara Kerja Cuckoo Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Instalasi/instalasi.html">Instalasi</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#instalansi-librari-python-pada-ubuntu-debian">(1) Instalansi Librari Python pada  Ubuntu/Debian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#pembuatan-web-interface-cuckoo">(2) Pembuatan Web Interface Cuckoo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#instalasi-dan-pengaturan-virtualbox">(3) Instalasi dan Pengaturan Virtualbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#instalasi-dan-pengaturan-cuckoo-virtualvenv-sh">(4) Instalasi dan Pengaturan Cuckoo-Virtualvenv.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#instalasi-cuckoo-dan-vm-cloack">(5) Instalasi Cuckoo dan VM Cloack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#automatic-vm-creation">(6) Automatic VM Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#konfigurasi-cuckoo">(7) Konfigurasi Cuckoo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#pengaturan-jaringan-dan-konfigurasi-routing">(8) Pengaturan Jaringan dan Konfigurasi Routing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Instalasi/instalasi.html#menjalankan-cuckoo">(9) Menjalankan Cuckoo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Penggunaan/penggunaan.html">Penggunaan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coba/Penggunaan/penggunaan.html#input-sample">Input Sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Penggunaan/penggunaan.html#analisis-sample">Analisis Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Pengembangan/pengembangan.html">Pengembangan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coba/Pengembangan/pengembangan.html#cuckoo-sandbox">Cuckoo Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coba/Catatan/catatan.html">Catatan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coba/Catatan/catatan.html#tips">Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coba/Catatan/catatan.html#referensi">Referensi</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="index-dan-tabel">
+<h1>Index dan Tabel<a class="headerlink" href="#index-dan-tabel" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="coba/Pengenalan/pengenalan.html" class="btn btn-neutral float-right" title="Pengenalan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, group2blue
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

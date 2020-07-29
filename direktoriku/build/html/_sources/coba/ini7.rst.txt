@@ -1,0 +1,51 @@
+(8) Pengaturan Jaringan dan Konfigurasi Routing 
+================================================
+
+1. Sebagai root, terapkan pada interface vboxnet0 dan interface keluar, penggunaan enss33 sebagai nilai dummy:
+
+.. code-block:: shell
+
+   $ sudo sysctl -w net.ipv4.conf.vboxnet0.forwarding=1
+   $ sudo sysctl -w net.ipv4.conf.ens33.forwarding=1
+
+.. image:: z177.png
+
+
+2. Konfigurasi pada file routing.conf, dengan mengubah interface yang digunakan oleh filter yaitu ens33:
+
+.. code-block:: shell
+
+   $ sudo nano routing.conf
+
+.. image:: z18.png
+
+
+3. Lakukan konfigurasi file reporting.conf pada bagian “ [mongodb]” pada baris “enabled = yes”:
+
+.. code-block:: shell
+
+   $ sudo nano reporting.conf
+
+.. image:: z19.png
+
+
+4. Menciptakan proses cuckoo router dengan tidak menjalankannya menggunakan perintah sudo:
+
+.. code-block:: shell
+
+   $ cuckoo rooter --sudo --group pssn
+
+.. image:: z20.png
+
+
+5. Menjalankan cuckoo web dengan server:
+
+
+.. code-block:: shell
+
+   $ cuckoo web --host 0.0.0.0 --port 8080
+
+.. image:: z21.png
+
+
+

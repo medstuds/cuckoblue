@@ -1,0 +1,41 @@
+(3) Instalasi dan Pengaturan Virtualbox
+=======================================
+
+1. Penambahan kunci repositori:
+
+.. code-block:: shell
+
+   $ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+   $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+.. image:: h.png
+
+
+2. Penambahan repositori VirtualBox:
+
+.. code-block:: shell
+
+   $ sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+
+.. image:: i.png
+
+
+3. Instalasi VirtualBox 5.2:
+
+.. code-block:: shell
+
+   $ sudo apt-get install virtualbox-5.2
+
+.. image:: j.png
+
+
+4. Instalasi M2Crypto:
+
+.. code-block:: shell
+
+   $ sudo pip install m2crypto
+
+.. image:: k.png
+
+
+

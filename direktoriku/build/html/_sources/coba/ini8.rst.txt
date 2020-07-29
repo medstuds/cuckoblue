@@ -1,0 +1,48 @@
+(9) Menjalankan Cuckoo
+========================
+
+1. Setelah proses sebelumnya berhasil dilakukan, kemudian uji coba cuckoo dengan perintah:
+
+.. code-block:: shell
+
+   $ cuckoo
+
+.. image:: z22.png
+
+
+2. Pada saat menjalankan cuckoo akan membutuhkan 3 tab terminal yang akan dijalankan secara bersamaan.
+Pada terminal pertama gunakan perintah berikut ini:
+
+.. code-block:: shell
+
+   $ cuckoo rooter --sudo --group pssn
+
+.. image:: z25.png
+
+
+3. Pada terminal kedua akan dijalankan dengan perintah dengan tujuan unutk mengakses ke media web server:
+
+.. code-block:: shell
+
+   $ virtualenv -p python2.7 cuckoo-test
+   $ . cuckoo-test/bin/activate
+
+.. image:: z24.png
+
+
+4. Cara akses ke media web browser dengan membuka terminal baru (terminal ketiga) untuk melakukan ssh ke server.
+Jalankan perintah berikut terlebih dahulu pada tab ketiga:
+
+.. code-block:: shell
+
+   $ cuckoo web --host 0.0.0.0 --port 8080
+   $ cuckoo
+
+.. image:: z26.png
+
+
+4. Pembuatan web interface dan mengakses di web browser dengan alamat IP 103.206.253.179:8080:
+
+.. image:: z23.png
+
+

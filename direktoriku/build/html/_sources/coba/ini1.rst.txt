@@ -1,0 +1,56 @@
+(2) Pembuatan Web Interface Cuckoo
+==================================
+
+1. Lakukan instalasi mongo-db dengan menggunakan perintah:
+
+.. code-block:: shell
+
+   $ sudo apt-get insttall mongo-db
+
+.. image:: d.png
+
+
+2. Instalasi postgresql
+
+.. code-block:: shell
+
+   $ sudo apt-get insttall postgresql libpq-dev
+
+.. image:: e.png
+
+
+3. Instalasi apparmor tcpdump
+
+.. code-block:: shell
+  
+   $ sudo apt-get install tcpdump apparmor-utils
+
+.. image:: f.png
+
+
+Tcpdump membutuhkan hak akses root, tetapi Cuckoo seharusnya tidak dijalankan sebagai root, lakukan pengaturan dengan:
+
+
+.. code-block:: shell
+  
+   $ sudo groupadd pcap
+   $ sudo usermod -a -G pcap cuckoo
+   $ sudo chgrp pcap /usr/sbin/tcpdump
+   $ sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump 
+
+.. image:: g.png
+
+
+4. Pengunduhan ISO Windows 7 dan proses mounting ISO, unduh ISO, buat folder dan mounting:
+
+.. code-block:: shell
+
+   $ wget https://cuckoo.sh/win7ultimate.iso
+   $ mkdir /mnt/win7
+   $ sudo mount -o ro,loop win7ultimate.iso /mnt/win7
+
+.. image:: g1.png
+
+
+
+

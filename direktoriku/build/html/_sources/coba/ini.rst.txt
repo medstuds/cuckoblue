@@ -1,0 +1,27 @@
+(1) Instalansi Librari Python pada  Ubuntu/Debian
+==================================================
+
+1. Lakukan instalasi berikut ini:
+
+.. code-block:: shell
+
+   $ sudo apt-get install python python-pip python-dev libffi-dev libssl-dev
+
+.. image:: a.png
+
+
+.. code-block:: shell
+
+   $ sudo apt-get install python-virtualenv python-setuptools
+
+.. image:: b.png
+
+.. code-block:: shell
+
+   $ sudo apt-get install libjpeg-dev zlib1g-dev swig
+
+.. image:: c.png
+
+
+coba subbab
+^^^^^^^^^^^

@@ -1,0 +1,58 @@
+Konfigurasi Cuckoo
+===================
+
+1. Pembuatan direktori dengan perintah:
+
+.. code-block:: shell
+
+   $ cuckoo init
+
+.. image:: z11.png
+
+
+2. Masuk pada direktori cuckoo dan lihat isi direktori tersebut dengan perintah:
+
+.. code-block:: shell
+
+   $ cd .cuckoo/
+   $ ls     
+
+.. image:: z12.png
+
+
+3. Konfigurasi cuckoo community: 
+
+.. code-block:: shell
+
+   $ cuckoo community     
+
+.. image:: z13.png
+
+
+
+4. Konfigurasi file virtualbox.conf:
+
+Gambar di bawah menunjukan file konfigurasi virtualbox.conf sebelum dilakukan perubahan
+
+.. code-block:: shell
+
+   $ nano virtualbox.conf
+
+.. image:: z14.png
+
+
+5.Tambahkan ip pada file konfigurasi virtualbox.conf:
+
+.. code-block:: shell
+
+   $ while read -r vm ip; do cuckoo machine --add $vm $ip; done < <(vmcloak list vms)
+   $ nano virtualbox.conf
+
+.. image:: z15.png
+
+
+6. Setelah ditambahkan konfigurasi akan berubah menjadi:
+
+.. image:: z16.png
+
+

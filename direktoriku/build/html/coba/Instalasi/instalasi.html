@@ -1,0 +1,559 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Instalasi &mdash; cuckooblue 1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Penggunaan" href="../Penggunaan/penggunaan.html" />
+    <link rel="prev" title="Pengenalan" href="../Pengenalan/pengenalan.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> cuckooblue
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Daftar isi:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Pengenalan/pengenalan.html">Pengenalan</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Instalasi</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalansi-librari-python-pada-ubuntu-debian">(1) Instalansi Librari Python pada  Ubuntu/Debian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pembuatan-web-interface-cuckoo">(2) Pembuatan Web Interface Cuckoo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalasi-dan-pengaturan-virtualbox">(3) Instalasi dan Pengaturan Virtualbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalasi-dan-pengaturan-cuckoo-virtualvenv-sh">(4) Instalasi dan Pengaturan Cuckoo-Virtualvenv.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalasi-cuckoo-dan-vm-cloack">(5) Instalasi Cuckoo dan VM Cloack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-vm-creation">(6) Automatic VM Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#konfigurasi-cuckoo">(7) Konfigurasi Cuckoo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pengaturan-jaringan-dan-konfigurasi-routing">(8) Pengaturan Jaringan dan Konfigurasi Routing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#menjalankan-cuckoo">(9) Menjalankan Cuckoo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Penggunaan/penggunaan.html">Penggunaan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pengembangan/pengembangan.html">Pengembangan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Catatan/catatan.html">Remarks</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">cuckooblue</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Instalasi</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/coba/Instalasi/instalasi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instalasi">
+<h1>Instalasi<a class="headerlink" href="#instalasi" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instalansi-librari-python-pada-ubuntu-debian">
+<h2>(1) Instalansi Librari Python pada  Ubuntu/Debian<a class="headerlink" href="#instalansi-librari-python-pada-ubuntu-debian" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Lakukan instalasi berikut ini:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python python-pip python-dev libffi-dev libssl-dev
+</pre></div>
+</div>
+<img alt="../../_images/a.png" src="../../_images/a.png" />
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python-virtualenv python-setuptools
+</pre></div>
+</div>
+<img alt="../../_images/b.png" src="../../_images/b.png" />
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install libjpeg-dev zlib1g-dev swig
+</pre></div>
+</div>
+<img alt="../../_images/c.png" src="../../_images/c.png" />
+</div>
+<div class="section" id="pembuatan-web-interface-cuckoo">
+<h2>(2) Pembuatan Web Interface Cuckoo<a class="headerlink" href="#pembuatan-web-interface-cuckoo" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Lakukan instalasi mongo-db dengan menggunakan perintah:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get insttall mongo-db
+</pre></div>
+</div>
+<img alt="../../_images/d.png" src="../../_images/d.png" />
+<ol class="arabic simple" start="2">
+<li>Instalasi postgresql</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get insttall postgresql libpq-dev
+</pre></div>
+</div>
+<img alt="../../_images/e.png" src="../../_images/e.png" />
+<ol class="arabic simple" start="3">
+<li>Instalasi apparmor tcpdump</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install tcpdump apparmor-utils
+</pre></div>
+</div>
+<img alt="../../_images/f.png" src="../../_images/f.png" />
+<p>Tcpdump membutuhkan hak akses root, tetapi Cuckoo seharusnya tidak dijalankan sebagai root, lakukan pengaturan dengan:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo groupadd pcap
+$ sudo usermod -a -G pcap cuckoo
+$ sudo chgrp pcap /usr/sbin/tcpdump
+$ sudo setcap cap_net_raw,cap_net_admin<span class="o">=</span>eip /usr/sbin/tcpdump
+</pre></div>
+</div>
+<img alt="../../_images/g.png" src="../../_images/g.png" />
+<ol class="arabic simple" start="4">
+<li>Pengunduhan ISO Windows 7 dan proses mounting ISO, unduh ISO, buat folder dan mounting:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ wget https://cuckoo.sh/win7ultimate.iso
+$ mkdir /mnt/win7
+$ sudo mount -o ro,loop win7ultimate.iso /mnt/win7
+</pre></div>
+</div>
+<img alt="../../_images/g1.png" src="../../_images/g1.png" />
+</div>
+<div class="section" id="instalasi-dan-pengaturan-virtualbox">
+<h2>(3) Instalasi dan Pengaturan Virtualbox<a class="headerlink" href="#instalasi-dan-pengaturan-virtualbox" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Penambahan kunci repositori:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- <span class="p">|</span> sudo apt-key add -
+$ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- <span class="p">|</span> sudo apt-key add -
+</pre></div>
+</div>
+<img alt="../../_images/h.png" src="../../_images/h.png" />
+<ol class="arabic simple" start="2">
+<li>Penambahan repositori VirtualBox:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository <span class="s2">&quot;deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> contrib&quot;</span>
+</pre></div>
+</div>
+<img alt="../../_images/i.png" src="../../_images/i.png" />
+<ol class="arabic simple" start="3">
+<li>Instalasi VirtualBox 5.2:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install virtualbox-5.2
+</pre></div>
+</div>
+<img alt="../../_images/j.png" src="../../_images/j.png" />
+<ol class="arabic simple" start="4">
+<li>Instalasi M2Crypto:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo pip install m2crypto
+</pre></div>
+</div>
+<img alt="../../_images/k.png" src="../../_images/k.png" />
+</div>
+<div class="section" id="instalasi-dan-pengaturan-cuckoo-virtualvenv-sh">
+<h2>(4) Instalasi dan Pengaturan Cuckoo-Virtualvenv.sh<a class="headerlink" href="#instalasi-dan-pengaturan-cuckoo-virtualvenv-sh" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Install virtualenv:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get -y install virtualenv
+</pre></div>
+</div>
+<img alt="../../_images/l.png" src="../../_images/l.png" />
+<ol class="arabic simple" start="2">
+<li>Install virtualenvwrapper:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get -y install virtualenvwrapper
+</pre></div>
+</div>
+<img alt="../../_images/m.png" src="../../_images/m.png" />
+<ol class="arabic simple" start="3">
+<li>Install pip for python3:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get -y install python3-pip
+</pre></div>
+</div>
+<img alt="../../_images/n.png" src="../../_images/n.png" />
+<ol class="arabic simple" start="4">
+<li>pip3 install –user virtualenvwrapper:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3&quot;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">echo</span> <span class="s2">&quot;source ~/.local/bin/virtualenvwrapper.sh&quot;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">export</span> <span class="nv">WORKON_HOME</span><span class="o">=</span>~/.virtualenvs
+$ <span class="nb">echo</span> <span class="s2">&quot;export WORKON_HOME=~/.virtualenvs&quot;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">echo</span> <span class="s2">&quot;export PIP_VIRTUALENV_BASE=~/.virtualenvs&quot;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+<img alt="../../_images/o.png" src="../../_images/o.png" />
+</div>
+<div class="section" id="instalasi-cuckoo-dan-vm-cloack">
+<h2>(5) Instalasi Cuckoo dan VM Cloack<a class="headerlink" href="#instalasi-cuckoo-dan-vm-cloack" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Masuk direktori cuckoo:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ..
+$ <span class="nb">cd</span> cuckoo
+$ virtualenv -p python2.7 cuckoo-test
+$ . cuckoo-test/bin/activate
+</pre></div>
+</div>
+<img alt="../../_images/p.png" src="../../_images/p.png" />
+<ol class="arabic simple" start="2">
+<li>Install VM Cloack:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install -U cuckoo vmcloak
+</pre></div>
+</div>
+<img alt="../../_images/q.png" src="../../_images/q.png" />
+<ol class="arabic simple" start="3">
+<li>Instal pip setup tools:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install -U pip setuptools
+</pre></div>
+</div>
+<img alt="../../_images/r.png" src="../../_images/r.png" />
+<ol class="arabic simple" start="4">
+<li>Instalasi kebutuhan VM Cloack dan Cuckoo:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get -y install build-essential libssl-dev libffi-dev python-dev genisoimage
+</pre></div>
+</div>
+<img alt="../../_images/s.png" src="../../_images/s.png" />
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get -y install zlib1g-dev libjpeg-dev
+</pre></div>
+</div>
+<img alt="../../_images/t.png" src="../../_images/t.png" />
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get -y install python-pip python-virtualenv python-setuptools swig
+</pre></div>
+</div>
+<img alt="../../_images/u.png" src="../../_images/u.png" />
+</div>
+<div class="section" id="automatic-vm-creation">
+<h2>(6) Automatic VM Creation<a class="headerlink" href="#automatic-vm-creation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Pertama, mulailah dengan mendefinisikan dan membuat instance adapter jaringan Host-Only VirtualBox untuk digunakan VM:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vmcloak-vboxnet0
+</pre></div>
+</div>
+<img alt="../../_images/v.png" src="../../_images/v.png" />
+<ol class="arabic simple" start="2">
+<li>Cek interface dengan menggunakan perintah:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ ifconfig
+</pre></div>
+</div>
+<img alt="../../_images/w.png" src="../../_images/w.png" />
+<ol class="arabic simple" start="3">
+<li>Kemudian membuat VM dan menginstal Windows secara otomatis, Cuckoo VM setidaknya memiliki 2GB memori dan dua atau lebih core CPU:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vmcloak init --verbose --win7x64 win7x64base --cpus <span class="m">2</span> --ramsize <span class="m">2048</span>
+</pre></div>
+</div>
+<img alt="../../_images/x.png" src="../../_images/x.png" />
+<ol class="arabic simple" start="4">
+<li>Membuat kloning dan snapshot dari VM:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vmcloak clone win7x64base win7x64cuckoo
+</pre></div>
+</div>
+<img alt="../../_images/y.png" src="../../_images/y.png" />
+<ol class="arabic simple" start="5">
+<li>Lakukan instalasi vmcloack dengan Internet Explorer 11:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vmcloak install win7x64cuckoo ie11
+</pre></div>
+</div>
+<img alt="../../_images/z.png" src="../../_images/z.png" />
+<ol class="arabic simple" start="6">
+<li>Instalasi snapshot untuk VM dengan ip yang digunakan:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vmcloak snapshot --count <span class="m">4</span> win7x64cuckoo <span class="m">192</span>.168.56.101
+</pre></div>
+</div>
+<img alt="../../_images/z10.png" src="../../_images/z10.png" />
+</div>
+<div class="section" id="konfigurasi-cuckoo">
+<h2>(7) Konfigurasi Cuckoo<a class="headerlink" href="#konfigurasi-cuckoo" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Pembuatan direktori dengan perintah:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo init
+</pre></div>
+</div>
+<img alt="../../_images/z11.png" src="../../_images/z11.png" />
+<ol class="arabic simple" start="2">
+<li>Masuk pada direktori cuckoo dan lihat isi direktori tersebut dengan perintah:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> .cuckoo/
+$ ls
+</pre></div>
+</div>
+<img alt="../../_images/z12.png" src="../../_images/z12.png" />
+<ol class="arabic simple" start="3">
+<li>Konfigurasi cuckoo community:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo community
+</pre></div>
+</div>
+<img alt="../../_images/z13.png" src="../../_images/z13.png" />
+<ol class="arabic simple" start="4">
+<li>Konfigurasi file virtualbox.conf:</li>
+</ol>
+<p>Gambar di bawah menunjukan file konfigurasi virtualbox.conf sebelum dilakukan perubahan</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ nano virtualbox.conf
+</pre></div>
+</div>
+<img alt="../../_images/z14.png" src="../../_images/z14.png" />
+<p>5.Tambahkan ip pada file konfigurasi virtualbox.conf:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ <span class="k">while</span> <span class="nb">read</span> -r vm ip<span class="p">;</span> <span class="k">do</span> cuckoo machine --add <span class="nv">$vm</span> <span class="nv">$ip</span><span class="p">;</span> <span class="k">done</span> &lt; &lt;<span class="o">(</span>vmcloak list vms<span class="o">)</span>
+$ nano virtualbox.conf
+</pre></div>
+</div>
+<img alt="../../_images/z15.png" src="../../_images/z15.png" />
+<ol class="arabic simple" start="6">
+<li>Setelah ditambahkan konfigurasi akan berubah menjadi:</li>
+</ol>
+<img alt="../../_images/z16.png" src="../../_images/z16.png" />
+</div>
+<div class="section" id="pengaturan-jaringan-dan-konfigurasi-routing">
+<h2>(8) Pengaturan Jaringan dan Konfigurasi Routing<a class="headerlink" href="#pengaturan-jaringan-dan-konfigurasi-routing" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Sebagai root, terapkan pada interface vboxnet0 dan interface keluar, penggunaan enss33 sebagai nilai dummy:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo sysctl -w net.ipv4.conf.vboxnet0.forwarding<span class="o">=</span><span class="m">1</span>
+$ sudo sysctl -w net.ipv4.conf.ens33.forwarding<span class="o">=</span><span class="m">1</span>
+</pre></div>
+</div>
+<img alt="../../_images/z177.png" src="../../_images/z177.png" />
+<ol class="arabic simple" start="2">
+<li>Konfigurasi pada file routing.conf, dengan mengubah interface yang digunakan oleh filter yaitu ens33:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo nano routing.conf
+</pre></div>
+</div>
+<img alt="../../_images/z18.png" src="../../_images/z18.png" />
+<ol class="arabic simple" start="3">
+<li>Lakukan konfigurasi file reporting.conf pada bagian “ [mongodb]” pada baris “enabled = yes”:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo nano reporting.conf
+</pre></div>
+</div>
+<img alt="../../_images/z19.png" src="../../_images/z19.png" />
+<ol class="arabic simple" start="4">
+<li>Menciptakan proses cuckoo router dengan tidak menjalankannya menggunakan perintah sudo:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo rooter --sudo --group pssn
+</pre></div>
+</div>
+<img alt="../../_images/z20.png" src="../../_images/z20.png" />
+<ol class="arabic simple" start="5">
+<li>Menjalankan cuckoo web dengan server:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo web --host <span class="m">0</span>.0.0.0 --port <span class="m">8080</span>
+</pre></div>
+</div>
+<img alt="../../_images/z21.png" src="../../_images/z21.png" />
+</div>
+<div class="section" id="menjalankan-cuckoo">
+<h2>(9) Menjalankan Cuckoo<a class="headerlink" href="#menjalankan-cuckoo" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Setelah proses sebelumnya berhasil dilakukan, kemudian uji coba cuckoo dengan perintah:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo
+</pre></div>
+</div>
+<img alt="../../_images/z22.png" src="../../_images/z22.png" />
+<p>2. Pada saat menjalankan cuckoo akan membutuhkan 3 tab terminal yang akan dijalankan secara bersamaan.
+Pada terminal pertama gunakan perintah berikut ini:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo rooter --sudo --group pssn
+</pre></div>
+</div>
+<img alt="../../_images/z25.png" src="../../_images/z25.png" />
+<ol class="arabic simple" start="3">
+<li>Pada terminal kedua akan dijalankan dengan perintah dengan tujuan unutk mengakses ke media web server:</li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ virtualenv -p python2.7 cuckoo-test
+$ . cuckoo-test/bin/activate
+</pre></div>
+</div>
+<img alt="../../_images/z24.png" src="../../_images/z24.png" />
+<p>4. Cara akses ke media web browser dengan membuka terminal baru (terminal ketiga) untuk melakukan ssh ke server.
+Jalankan perintah berikut terlebih dahulu pada tab ketiga:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cuckoo web --host <span class="m">0</span>.0.0.0 --port <span class="m">8080</span>
+$ cuckoo
+</pre></div>
+</div>
+<img alt="../../_images/z26.png" src="../../_images/z26.png" />
+<ol class="arabic simple" start="4">
+<li>Pembuatan web interface dan mengakses di web browser dengan alamat IP 103.206.253.179:8080:</li>
+</ol>
+<img alt="../../_images/z23.png" src="../../_images/z23.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Penggunaan/penggunaan.html" class="btn btn-neutral float-right" title="Penggunaan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Pengenalan/pengenalan.html" class="btn btn-neutral float-left" title="Pengenalan" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, group2blue
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

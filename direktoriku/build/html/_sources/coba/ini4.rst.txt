@@ -1,0 +1,54 @@
+(5) Instalasi Cuckoo dan VM Cloack
+===================================
+
+1. Masuk direktori cuckoo:
+
+.. code-block:: shell
+
+   $ cd ..
+   $ cd cuckoo
+   $ virtualenv -p python2.7 cuckoo-test
+   $ . cuckoo-test/bin/activate
+
+.. image:: p.png
+
+
+2. Install VM Cloack:
+
+.. code-block:: shell
+
+   $ pip install -U cuckoo vmcloak
+
+.. image:: q.png
+
+
+3. Instal pip setup tools:
+
+.. code-block:: shell
+
+   $ pip install -U pip setuptools
+   
+.. image:: r.png
+
+
+4. Instalasi kebutuhan VM Cloack dan Cuckoo:
+
+.. code-block:: shell
+
+   $ sudo apt-get -y install build-essential libssl-dev libffi-dev python-dev genisoimage
+
+.. image:: s.png
+
+
+.. code-block:: shell
+
+   $ sudo apt-get -y install zlib1g-dev libjpeg-dev
+
+.. image:: t.png
+
+
+.. code-block:: shell
+
+   $ sudo apt-get -y install python-pip python-virtualenv python-setuptools swig
+   
+.. image:: u.png

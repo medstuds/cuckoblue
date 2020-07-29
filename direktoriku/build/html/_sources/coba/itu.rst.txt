@@ -1,0 +1,9 @@
+(2) Pembuatan Web Interface Cuckoo
+==================================
+
+1. Lakukan instalasi mongo-db dengan menggunakan perintah:
+
+.. code-block:: shell
+
+   $ sudo apt-get insttall mongo-db
+

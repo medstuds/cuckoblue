@@ -1,0 +1,63 @@
+(6) Automatic VM Creation
+===========================
+
+1. Pertama, mulailah dengan mendefinisikan dan membuat instance adapter jaringan Host-Only VirtualBox untuk digunakan VM:
+
+.. code-block:: shell
+
+   $ vmcloak-vboxnet0
+
+.. image:: v.png
+
+
+2. Cek interface dengan menggunakan perintah:
+
+.. code-block:: shell
+
+   $ ifconfig 
+
+.. image:: w.png
+
+
+3. Kemudian membuat VM dan menginstal Windows secara otomatis, Cuckoo VM setidaknya memiliki 2GB memori dan dua atau lebih core CPU:
+
+.. code-block:: shell
+
+   $ vmcloak init --verbose --win7x64 win7x64base --cpus 2 --ramsize 2048        
+
+.. image:: x.png
+
+
+4. Membuat kloning dan snapshot dari VM:
+
+.. code-block:: shell
+
+   $ vmcloak clone win7x64base win7x64cuckoo
+
+.. image:: y.png
+
+
+5. Lakukan instalasi vmcloack dengan Internet Explorer 11:
+
+.. code-block:: shell
+
+   $ vmcloak install win7x64cuckoo ie11
+
+.. image:: z.png
+
+
+6. Instalasi snapshot untuk VM dengan ip yang digunakan:
+
+.. code-block:: shell
+
+   $ vmcloak snapshot --count 4 win7x64cuckoo 192.168.56.101     
+
+.. image:: z10.png
+
+
+
+
+ 
+
+
+

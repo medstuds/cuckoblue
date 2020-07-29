@@ -1,0 +1,45 @@
+.. cuckooblue documentation master file, created by
+   sphinx-quickstart on Sun Jul 26 11:16:19 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Instalasi dan Pengaturan Cuckoo Sandbox
+========================================
+
+Created by: Kelompok2_RKSBlue
+=============================
+
+Bagaimana cara untuk melakukan instalasi dan setting cuckoo sandbox:
+
+
+.. code-block:: shell
+   
+    Disusun oleh:
+    Dedek Wahyu Avyansyah
+    Fajar Sofar
+    Gifni Hammam Muyasar Permadi
+    Muhammad Jamil Daulima
+    Tiara Anggita Yudhistira
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Daftar isi:
+
+   coba/ini
+   coba/ini1
+   coba/ini2
+   coba/ini3
+   coba/ini4
+   coba/ini5
+   coba/ini6
+   coba/ini7
+   coba/ini8
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
