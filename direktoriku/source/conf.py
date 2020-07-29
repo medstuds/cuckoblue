@@ -88,6 +88,7 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_themes', ]
+master_doc = 'index'
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -173,3 +174,4 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
