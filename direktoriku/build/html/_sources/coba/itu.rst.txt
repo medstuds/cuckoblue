@@ -5,5 +5,5 @@
 
 .. code-block:: shell
 
-   $ sudo apt-get insttall mongo-db
+   $ sudo apt-get install mongo-db
 
