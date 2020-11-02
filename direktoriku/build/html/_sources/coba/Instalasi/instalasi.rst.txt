@@ -33,7 +33,7 @@ Instalasi
 
 .. code-block:: shell
 
-   $ sudo apt-get insttall mongo-db
+   $ sudo apt-get install mongo-db
 
 .. image:: d.png
 
@@ -42,7 +42,7 @@ Instalasi
 
 .. code-block:: shell
 
-   $ sudo apt-get insttall postgresql libpq-dev
+   $ sudo apt-get install postgresql libpq-dev
 
 .. image:: e.png
 
